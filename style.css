@@ -1,12 +1,19 @@
 
-body {background-color: rgb(0, 0, 0);}
+body {background-color: rgb(0, 0, 0);
+color:antiquewhite}
+
+img{
+  max-width: 100%;
+  height: auto;
+}
+
 h1 {
   color: rgb(255, 0, 179);
   font-size: 200px;
   text-align: center;
   font-family: "Handjet", sans-serif;
   font-optical-sizing: auto;
-  font-weight: <weight>;
+  font-weight: 500;
   font-style: normal;
   font-variation-settings:
     "ELGR" 1,
@@ -17,3 +24,54 @@ a:link {
   color: rgb(255, 0, 179);         
 }
 
+.grid-container {
+  display: grid;
+  padding: 15px;
+  column-gap: 15px;
+  grid-template-columns: repeat(6, 1fr);
+  grid-template-areas: 
+  "bio bio name name social social"
+  "p1 p1 p2 p2 p3 p3"
+  "p1-text p1-text p1-bild1 p1-bild2 p1-titel p1-titel"
+  "p1-text p1-text p1-bild3 p1-bild4 p1-titel p1-titel";
+}
+
+.name{
+  grid-area: name;
+}
+.bio{
+  grid-area: bio;
+}
+.social{
+  grid-area: social;
+}
+.p1{
+  grid-area: p1;
+  height: 200px;
+}
+
+.p1-text{
+  grid-area: p1-text;
+}
+.p1-bild1{
+  grid-area: p1-bild1;
+}
+.p1-bild2{
+  grid-area: p1-bild2;
+}
+.p1-bild3{
+  grid-area: p1-bild3;
+}
+.p1-bild4{
+  grid-area: p1-bild4;
+}
+.p1-titel{
+  grid-area: p1-titel;
+}
+
+.p2{
+  grid-area: p2;
+}
+.p3{
+  grid-area: p3;
+}
