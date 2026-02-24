@@ -1,6 +1,8 @@
 
 body {background-color: rgb(255, 255, 255);
-color:rgb(0, 0, 0)}
+color:rgb(0, 0, 0)
+font-family: 'GoogleSansCode', serif;
+}
 
 img{
   max-width: 100%;
@@ -9,19 +11,8 @@ img{
 
 h1 {
   color: rgb(0, 0, 0);
-  font-size: 200px;
   text-align: center;
-  font-family: "Handjet", sans-serif;
-  font-optical-sizing: auto;
-  font-weight: 350;
-  font-style: normal;
-  font-variation-settings:
-    "ELGR" 1,
-    "ELSH" 2;
-}
 
-a:link {
-  color: rgb(255, 0, 179);         
 }
 
 .grid-container {
@@ -34,6 +25,7 @@ a:link {
   "p1 p1 p2 p2 p3 p3"
   "p1-text p1-text p1-bild1 p1-bild2 p1-titel p1-titel"
   "p1-text p1-text p1-bild3 p1-bild4 p1-titel p1-titel";
+ 
 }
 
 .name{
@@ -73,10 +65,6 @@ a:link {
   grid-area: p2;
   
 }
-
-
-
-
 
 
 .p3{
