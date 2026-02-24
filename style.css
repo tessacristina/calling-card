@@ -1,7 +1,11 @@
 
-body {background-color: rgb(255, 255, 255);
-color:rgb(0, 0, 0)
-font-family: 'GoogleSansCode', serif;
+body {
+  background-color: rgb(255, 255, 255);
+  color:rgb(0, 0, 0);
+  font-family: "GoogleSansCode";
+  src: url("fonts/Google_Sans_Code/static/GoogleSansCode-Bold.ttf");
+  font-size: 12px;
+
 }
 
 img{
@@ -12,8 +16,15 @@ img{
 h1 {
   color: rgb(0, 0, 0);
   text-align: center;
-
+  font-size: 120px;
+  
 }
+
+@font-face {
+  font-family: "GoogleSansCode";
+  src: url("fonts/Google_Sans_Code/static/GoogleSansCode-Bold.ttf");
+}
+
 
 .grid-container {
   display: grid;
@@ -24,7 +35,11 @@ h1 {
   "bio bio name name social social"
   "p1 p1 p2 p2 p3 p3"
   "p1-text p1-text p1-bild1 p1-bild2 p1-titel p1-titel"
-  "p1-text p1-text p1-bild3 p1-bild4 p1-titel p1-titel";
+  "p1-text p1-text p1-bild3 p1-bild4 p1-titel p1-titel"
+  "p2-text p2-text p2-bild1 p2-bild2 p2-titel p2-titel"
+  "p2-text p2-text p2-bild3 p2-bild4 p2-titel p2-titel"
+  "p3-text p3-text p3-bild1 p3-bild2 p3-titel p3-titel"
+  "p3-text p3-text p3-bild3 p3-bild4 p3-titel p3-titel";
  
 }
 
@@ -40,6 +55,22 @@ h1 {
 .p1{
   grid-area: p1;
   height: 200px;
+}
+
+
+.p1-text,
+.p1-bild1,
+.p1-bild2,
+.p1-titel,
+.p2-text,
+.p2-bild1,
+.p2-bild2,
+.p2-titel,
+.p3-text,
+.p3-bild1,
+.p3-bild2,
+.p3-titel {
+  margin-top: 600px;
 }
 
 .p1-text{
@@ -61,13 +92,78 @@ h1 {
   grid-area: p1-titel;
 }
 
-.p2{
-  grid-area: p2;
-  
+.p2-text{
+  grid-area: p2-text;
 }
 
+.p2-bild1 {
+  grid-area: p2-bild1;
+}
+
+.p2-bild2 {
+  grid-area: p2-bild2;
+}
+
+.p2-bild3 {
+  grid-area: p2-bild3;
+}
+
+.p2-bild4 {
+  grid-area: p2-bild4;
+}
+
+.p2-titel {
+  grid-area: p2-titel;
+}
+
+.p3-text {
+  grid-area: p3-text;
+}
+
+.p3-bild1 {
+  grid-area: p3-bild1;
+}
+
+.p3-bild2 {
+  grid-area: p3-bild2;
+}
+
+.p3-bild3 {
+  grid-area: p3-bild3;
+}
+
+.p3-bild4 {
+  grid-area: p3-bild4;
+}
+
+.p3-titel {
+  grid-area: p3-titel;
+}
+
+.p2{
+  grid-area: p2;
+}
 
 .p3{
   grid-area: p3;
 }
 
+
+.p1 img,
+.p2 img,
+.p3 img {
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.p1:hover img {
+  opacity: 1;
+}
+
+.p2:hover img {
+  opacity: 1;
+}
+
+.p3:hover img {
+  opacity: 1;
+}
