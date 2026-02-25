@@ -51,6 +51,7 @@ h1 {
 }
 .social{
   grid-area: social;
+ 
 }
 .p1{
   grid-area: p1;
@@ -71,6 +72,9 @@ h1 {
 .p3-bild2,
 .p3-titel {
   margin-top: 600px;
+}
+.name{
+  margin-top: 100px;
 }
 
 .p1-text{
@@ -168,6 +172,25 @@ h1 {
   opacity: 1;
 }
 
-.Projekt 1:hover{
-text-decoration: none;
+.email{
+  color: black;
+  text-decoration: none;
+}
+a {
+  text-decoration: none;
+  color: inherit;
+  font-size: 24px;
+}
+
+.p1 {
+  font-size: 24px;
+  text-align: center;
+}
+.p2 {
+  font-size: 24px;
+  text-align: center;
+}
+.p3 {
+  font-size: 24px;
+  text-align: center;
 }
