@@ -4,7 +4,7 @@ body {
   color:rgb(0, 0, 0);
   font-family: "GoogleSansCode";
   src: url("fonts/Google_Sans_Code/static/GoogleSansCode-Bold.ttf");
-  font-size: 12px;
+  font-size: 16px;
 
 }
 
@@ -16,9 +16,10 @@ img{
 h1 {
   color: rgb(0, 0, 0);
   text-align: center;
-  font-size: 120px;
+  font-size: 135px;
   
 }
+
 
 @font-face {
   font-family: "GoogleSansCode";
@@ -51,6 +52,7 @@ h1 {
 }
 .social{
   grid-area: social;
+  text-align: right;
  
 }
 .p1{
@@ -74,9 +76,13 @@ h1 {
   margin-top: 600px;
 }
 .name{
-  margin-top: 100px;
+  margin-top: 230px;
 }
-
+.p1,
+.p2,
+.p3{
+  margin-top: 200px;
+}
 .p1-text{
   grid-area: p1-text;
 }
@@ -183,14 +189,54 @@ a {
 }
 
 .p1 {
-  font-size: 24px;
-  text-align: center;
+  font-size: 16px;
+  text-align: left;
 }
 .p2 {
-  font-size: 24px;
+  font-size: 16px;
   text-align: center;
 }
 .p3 {
-  font-size: 24px;
-  text-align: center;
+  font-size: 16px;
+  text-align: right;
 }
+.bio{
+  font-size: 16px;
+}
+
+.p1-bild1,
+.p1-bild2,
+.p1-bild3,
+.p1-bild4,
+.p2-bild1,
+.p2-bild2,
+.p2-bild3,
+.p2-bild4,
+.p3-bild1,
+.p3-bild2,
+.p3-bild3,
+.p3-bild4{
+  transition: t 0.5s ease;
+}
+.p1-bild1:hover,
+.p1-bild2:hover,
+.p1-bild3:hover,
+.p1-bild4:hover,
+.p2-bild1:hover,
+.p2-bild2:hover,
+.p2-bild3:hover,
+.p2-bild4:hover,
+.p3-bild1:hover,
+.p3-bild2:hover,
+.p3-bild3:hover,
+.p3-bild4:hover{
+  transform: scale(2.0);
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+
+
+ 
